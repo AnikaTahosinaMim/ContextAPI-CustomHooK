@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
-const ProductsFiled = () => {
+const ProductsFiled = ({ handleAddProducts }) => {
+  const [error, setError] = useState("");
   const handleProductsSubmit = (e) => {
     e.preventDefault();
     // console.log(e.target);
@@ -14,6 +15,17 @@ const ProductsFiled = () => {
       quentity,
     };
     console.log(newProducts);
+
+    if (name.length === 0) {
+      setError("plese enter your name");
+    } else if (price.length === 0) {
+      setError("ueefi");
+    } else {
+      setError("");
+    }
+    if (!error) {
+      handleAddProducts(newProducts);
+    }
   };
   return (
     <div>
@@ -27,6 +39,9 @@ const ProductsFiled = () => {
         <br />
         <input type="submit" value="submit" />
       </form>
+      <p>
+        <small>{error}</small>
+      </p>
     </div>
   );
 };
