@@ -1,14 +1,13 @@
 import React, { use } from "react";
 import { MoneyContext } from "./Family";
 
-const Brather = () => {
+const Friend = () => {
   const [money, setMoney] = use(MoneyContext);
   return (
     <div>
-      <h2>Brother</h2>
-      <button onClick={() => setMoney(money + 1000)}>Add Money </button>
+      <h2>Friend:{money}</h2>
     </div>
   );
 };
 
-export default Brather;
+export default Friend;
