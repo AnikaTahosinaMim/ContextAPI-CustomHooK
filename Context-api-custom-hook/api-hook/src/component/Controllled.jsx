@@ -3,6 +3,10 @@ import React, { useState } from "react";
 const Controllled = () => {
   const [password, setPassword] = useState("select");
   const [error, setError] = useState("");
+  const [email, setEmail] = useState("");
+  const handleEmail = (e) => {
+    setEmail(e.target.value)
+  };
   //   console.log(setPassword);
   const handlePassword = (e) => {
     console.log(e.target.value);
@@ -19,7 +23,8 @@ const Controllled = () => {
   return (
     <div>
       <form onSubmit={handleControlled}>
-        <input type="email" name="email" placeholder="Email" id="" required />
+        {/* <input type="name" name="email" placeholder="Email" id="" required /> */}
+        <input type="text" name="name" placeholder="name" />
         <br />
         <input
           type="password"
@@ -29,6 +34,16 @@ const Controllled = () => {
           defaultValue={password}
           onChange={handlePassword}
           required
+        />
+        <br />
+        <input
+          onChange={handleEmail}
+          preventDefault={email}
+          required
+          type="email"
+          name="email"
+          placeholder="email"
+          id=""
         />
         <br />
         <input type="submit" value="submite" />

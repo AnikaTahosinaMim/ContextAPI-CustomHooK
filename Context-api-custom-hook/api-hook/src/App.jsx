@@ -2,6 +2,7 @@ import "./App.css";
 import Controllled from "./component/Controllled";
 import FormAction from "./component/FormAction";
 import SimpleFrom from "./component/SimpleFrom";
+import Uncontrolled from "./component/Uncontrolled";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
          */}
         {/* <FormAction></FormAction> */}
         <Controllled></Controllled>
+
+        {/* <Uncontrolled></Uncontrolled> */}
       </div>
     </>
   );
