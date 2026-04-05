@@ -1,3 +1,5 @@
+import FamilyTree from "./component/Family/FamilyTree";
+import Grandpa from "./component/Family/Grandpa";
 import Controlled from "./component/Form/Controlled";
 import Formdata from "./component/Form/Formdata";
 import Onsubmit from "./component/Form/Onsubmit";
@@ -13,8 +15,8 @@ function App() {
       {/* <Controlled></Controlled> */}
       {/* <Uncontrolled></Uncontrolled> */}
       {/* <Applyhooks></Applyhooks> */}
-      <ProductsManagement></ProductsManagement>
-    
+      {/* <ProductsManagement></ProductsManagement> */}
+      <FamilyTree></FamilyTree>
     </>
   );
 }
