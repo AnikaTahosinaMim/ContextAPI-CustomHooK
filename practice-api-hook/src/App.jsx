@@ -3,6 +3,7 @@ import Formdata from "./component/Form/Formdata";
 import Onsubmit from "./component/Form/Onsubmit";
 import Uncontrolled from "./component/Form/Uncontrolled";
 import Applyhooks from "./component/Hooks/Applyhooks";
+import ProductsManagement from "./Products/ProductsManagement";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <Formdata></Formdata> */}
       {/* <Controlled></Controlled> */}
       {/* <Uncontrolled></Uncontrolled> */}
-      <Applyhooks></Applyhooks>
+      {/* <Applyhooks></Applyhooks> */}
+      <ProductsManagement></ProductsManagement>
     
     </>
   );
